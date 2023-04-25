@@ -94,7 +94,7 @@ def get_text_messages(message):
         media_group = []
         text = 'Твой завр сегодня это....'
         x = random.randint(1, 15)
-        media_group.append(InputMediaPhoto(open(f'mudozavr/{x}.jpg', 'rb'),
+        media_group.append(InputMediaPhoto(open(f'photo/mudozavr/{x}.jpg', 'rb'),
                                                caption=text))
         bot.send_media_group(chat_id=message.from_user.id, media=media_group)
 
